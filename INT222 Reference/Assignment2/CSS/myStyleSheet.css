@@ -1,0 +1,300 @@
+body { 
+	background-image: url(../img/background.jpg);	/* background image in all pages */
+}
+
+h1 {
+	font-size:40px;
+	text-shadow:4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+} /* my sheet style in size 1 heading place */
+
+h3 { position:relative; /*float: top*/; /* my sheet style in size 3 heading place */ }
+
+h4 { color:#0000B2; }
+
+hr {
+	background-color:#009900;
+	height:4px;
+	clear:both;
+} /* the line between content and updated date and time */
+
+img {
+	width: 97%;
+} /*the width of all imgaes*/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+#comments {
+	font-size: 30px;
+	font-family: Gabriola;
+}
+
+.building ol{
+	list-style:lower-roman;
+	float:left;
+	width: 18.5%;
+	font-family:Cursive;
+}
+
+.building table {
+	position:relative; 
+	width: 900px;
+	border-collapse: collapse;
+	border-color: #CC0000;
+	/*float:top;*/
+} /* a table with images of top10 famous building in Paris*/
+
+.building table td {
+	width:180px;
+	height:135px;
+}
+
+.building img {
+	width:180px;
+	height:135px;
+	margin:auto;
+	float:left;
+	opacity:0.7;
+}
+
+.building img:hover{ opacity:1; }
+
+.container {
+	font-size:16px;
+	font-family:Arial;
+	line-height:1.5;
+	width:95%;
+	padding-left: 40px;
+} /* my stylesheet in main text type */
+
+ .container a:link {
+	text-decoration:none;
+	color:red;
+}
+
+ .container a:visited  a:active{
+	color:#800000;
+	text-decoration:underline;
+}
+
+ .container a:hover{
+	text-decoration:underline;
+	background-color:#00CCFF;
+	color:blue;
+}
+
+img#map {
+	width:300px;
+	float:left;
+	margin-right:14px;
+	background-color:#99CCFF;
+	box-shadow:4px 4px 4px rgb(92, 92, 70);
+}
+
+img#french {
+	float:left;
+	width:470px;
+	height:318px;
+	margin-left:30px;
+	margin-bottom:40px;
+	box-shadow:4px 4px 4px rgb(92, 92, 70);
+}
+
+table#language {
+	border:2px solid blue;
+	background-color:#33CCFF;
+	text-align:center;
+	float:left;
+	width:60%;
+}
+
+.description {
+	width:50%;
+	margin:2px 2px 2px 2px;
+	float:left;
+}
+iframe#history {
+	width:480px;
+	height:380px;
+	float: left;
+	margin-right:20px;
+}
+
+iframe.music {
+	position:relative; 
+	width:97%;
+	margin:10px 3px 0 5px;
+	/*float:top;*/
+}
+
+ol.history {
+	float:left;
+	list-style:upper-latin;
+}
+
+ol.history ul{
+	list-style:square;
+}
+
+aside.introduction {
+	float:left;
+	background-color: #009999;
+	width: 18%;
+	padding-left:10px;
+	padding-right:10px;
+	box-shadow:4px 3px 3px #003D4C;
+}
+
+aside.introduction img {
+	width:97%;
+	margin-left:2%;
+	margin-top:2%;
+}
+
+aside.introduction p, aside.introduction h3,aside.introduction h4 {
+	position:relative; 
+	margin-left:5px;
+	/*float:top-left;*/
+}
+
+aside.transit_details {
+	position:relative; 
+	float:left;
+	width:75%;
+	margin-left: 30px;
+	margin-bottom:2%;
+} /* It displays more details about the transit information of Paris*/
+
+aside.transit_details img {
+	position:relative; 
+	/*float:left-top;*/
+	margin-left:5%;
+	margin-bottom:5%;
+	width:400px;
+	box-shadow:	4px 4px 4px rgb(92, 92, 70);
+}
+
+aside.paris_logo {
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	width:120px;
+}
+
+aside.transit_page_footer {
+	position:relative; 
+	/*float:top;*/
+	font-size:18px;
+	height:40px;
+	clear:both;
+	text-align:center;
+	background:#0099CC;
+	box-shadow:4px 3px 3px #003D4C;
+}
+aside.top_title {position:relative; width:97%; /*float:top*/; padding:2px; margin:4px;}
+aside.left_side_box, aside.right_side_box {width:30%;margin:0 0 20px 0;float:left;}
+aside.mid_side_box { width:30%;margin: 0 3% 20px 4%; float:left;}
+
+aside.large_size_box { width:48%; float:left; margin:0 7px 8px 0;}
+aside.mid_size_box { width:24%; float: left; margin:0 7px 8px 0; }
+aside.small_size_box { width:12%; /*float:left-top;*/}
+
+aside p, aside h3, aside h2, aside img {
+	margin-left:1.5%;
+	margin-top:1.5%;
+}
+
+aside#green { background-color:#00E600; box-shadow:3px 3px 3px rgb(0, 82, 0);}
+aside#blue { background-color:#0047B2; box-shadow:3px 3px 3px rgb(0, 0, 102);}
+aside#yellow { background-color:#E6E600; box-shadow:3px 3px 3px rgb(0, 71, 0);}
+aside#coffee { background-color:#D14719; box-shadow:3px 3px 3px rgb(63, 21, 8); }
+aside#none { background-color:#75A3A3; box-shadow:3px 3px 3px rgb(4, 6, 6);}
+
+img#goto_top { width:60px; padding:0 0 0 0; margin:0 0 0 20px; float:left;}
+a#return_to_top { float:left; background-color:#00FF00;padding:13px;margin:0;}
+a#return_to_top:hover { box-shadow:4px 3px 3px #000040; background-color:#009999;}
+
+nav {
+	background-color: #009999;
+	width:97%;
+}
+		
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float:left;
+	width:14%;
+}
+
+nav a:link, nav a:visited {
+	display: block;
+	color: #CC3300;
+	background-color: #009999;
+	text-align: center;
+	padding: 8px 12px;
+	text-decoration: none;
+	border: 2px outset #FF3300;
+}
+
+nav ul li ul {
+	padding: 8px 12px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s;
+}
+
+nav ul li:hover ul {
+	display: block;
+	padding: 0;
+	width: 450px;
+	opacity: 1;
+	visibility: visible;
+}
+
+nav ul li ul li {
+	display: block;
+	text-align: center;
+	width: 150px;
+}
+
+nav a:hover {
+	color: red;
+	text-decoration:underline;
+	border: 2px inset #006600;
+}
+
+#left {
+	width:25%;
+	float:left;
+	padding-bottom:2.5%;
+}
+
+#left img:hover {
+	box-shadow:4px 4px 4px rgb(92, 92, 70);
+}
+
+#right img {
+	width:65%;
+	float:left;
+	margin-left:5%;
+	box-shadow: 14px 9px 10px 0px rgb(186, 148, 148);
+}
+
+
+footer {
+	text-align:center;
+	font-family:Courier;
+}

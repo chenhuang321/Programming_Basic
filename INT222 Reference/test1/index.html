@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+
+        <style type="text/css">
+            .main {
+                line-height:1.5;
+            }
+            
+            h1 {
+                 color:blue;   
+            }
+            
+            table.timetable {
+                border:1px solid black;
+                width:450px;
+                text-align:center;
+            }
+            
+            .timetable th, .timetable td {
+                border:1px solid #330099;
+            }
+            
+            span {
+                color:red;
+            }
+            
+            #contact{
+                width: 240px;
+            }
+            
+            #exam, #securty_answer {
+                width:300px;
+            }
+			
+			form {
+				border:1px solid black;
+				padding:7px;
+				margin:0 20% 0 20%;
+			}
+			.comment {
+				margin:0 20% 0 20%;
+			}
+			
+			h3.comment {
+				color:blue;
+			}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML Test</h1>
+            <p>This is just a HTML test!</p>
+        </header>
+        
+        <section class="main">
+            <h2>Welcome...</h2>
+            <h3>My Timetable</h3>
+            <table class="timetable">
+                <tr>
+                    <th>N/A</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td>CUL401</td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>INT222</td>
+                    <td></td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DBS201</td>
+                    <td></td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>EAC214</td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                    <td>&#10004;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <h3>CUL401 - schedule</h3>
+            <ul id="cul401">
+                  <li>Lecture 1 <button>Note 1</button></li>
+                  <li>Lecture 2 <button>Note 2</button></li>
+                  <li>Lecture 3 &amp; Quiz 1 <button>Note 2</button></li>
+                  <li>Lecture 4 &amp; Quiz 2 <button>Note 2</button></li>
+                  <li>Lecture 5 &amp; Mid_term&nbsp;&nbsp;<input type="password">&nbsp;<button>Submit</button>&nbsp;
+                  <span>Please enter your password</span></li>
+                  <li>Lecture 6 &amp; Quiz 3 <button>Note 5 &amp; 6</button></li>
+                  <li>Lecture 7 &amp; Quiz 4 <button>Note 7</button></li>
+                  <li>Final Exam <input type="text" value="8/19/2015 2:00-4:00 pm Date:19 August in T3087" id="exam">
+                  <button>Accept</button></li>
+            </ul>
+            
+            <h3>INT222 - Registry Menu</h3>
+			<form>
+                First Name <input type="text">&nbsp;&nbsp;
+                Last Name <input type="text">&nbsp;&nbsp;<br>
+                Email Address:<br>
+                <input type="email" value="@myseneca.ca" id="contact">&nbsp;<button>Validate</button><br>
+                Phone Number:<br>
+                <input type="tel" value="647-">&nbsp;<button>Validate</button><br>
+                Course Instructor:<br>
+                <input type="text" value="Wei Song">
+                <input id = "flying" type="range" min="0" max="10" oninput="level.value = entry14.valueAsNumber">
+                <output for="flying" name="level">0</output>/10&nbsp;
+                <span>Rate this Professor</span><br>
+				Hosting Address:<br>
+				<input type="text" value="zenit.senecac.on.ca">&nbsp;<button>Validate</button><br>
+				Set your Password:<br>
+				<input type="password" id="password_first_input" placeholder="Just have fun!">&nbsp;
+				<span>You should input at least 8 characters with more than one upper-case word ans special characters &#40;e.g. 
+				&#33; &#35; &#36; &#38; &#42; or &#63;, etc!&#41;</span><br>
+				Confirm your password:<br>
+				<input type="password" id="password_second_input">&nbsp;
+				<span>The second password you input should match your first one!</span><br>
+				Please set a security question:<br>
+				<select name="security_questions">
+				<option value="q1">Where do you come from?</option>
+				<option value="q2">What's your favorite music in your childhood!</option>
+				<option value="q3">Where is the city you buy your first cellphone?</option>
+				<option value="q4">What kind of TV show do you like best?</option>
+				<option value="q5">How do you know Seneca College in your hometown?</option>
+				<option value="q6">Who is your first roommate in Canada?</option>
+				</select><br>
+				Answer your question:<br>
+				<input id="securty_answer" type="text" placeholder="It should be at least 10 characters!">&nbsp;<button>Validate</button>
+				<br>
+				<hr>
+				<input type="submit" value="Submit">&nbsp;&nbsp;<input type="reset" value=" Clear "><br>
+			</form>
+				<script>
+					var comments = prompt("Just tell me what's your feeling?","I'm not very happy!");
+					var name = prompt("What's your name?","Ethan Deng");
+					if(name=="null") name="Visitor"+parseInt(Math.random()*1000);
+					if(comments==null) comments = name + " is too lazy to say anything!";
+					document.write("<br><br><h3 class='comment'>"+name+"</h3><p class='comment'>"+comments+"</p>");
+				</script>
+                
+                <!-- for view-source and download -->
+   <br><p><a href="view-source:">View-source</a>&nbsp;&nbsp;&nbsp;<a href='' download>Download</a>
+        </section>
+        <footer>
+        </footer>
+        
+    </body>
+</html>
